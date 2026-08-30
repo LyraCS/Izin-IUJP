@@ -1,4 +1,5 @@
 import React from "react"
+import { CONTACT } from "../content"
 
 const Hero: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const Hero: React.FC = () => {
           Kami menangani seluruh birokrasi agar Anda bisa fokus pada operasional tambang.
         </p>
         <div className="hero-actions">
-          <a href="https://wa.me/6281318415169" className="btn btn--primary">Konsultasi Gratis</a>
+          <a href={CONTACT.waLink} className="btn btn--primary">Konsultasi Gratis</a>
           <a href="#layanan" className="btn btn--ghost">Lihat Layanan Kami</a>
         </div>
         <div className="hero-meta" />

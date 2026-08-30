@@ -1,4 +1,5 @@
 import React from "react"
+import { TRUST_STATS } from "../content"
 
 const TrustStrip: React.FC = () => {
   return (
@@ -6,18 +7,12 @@ const TrustStrip: React.FC = () => {
       <div className="container trust-inner">
         <p>Dipercaya perusahaan jasa pertambangan di seluruh Indonesia</p>
         <div className="trust-stats">
-          <div className="trust-stat">
-            <strong>50+</strong>
-            <span>Perusahaan Terbantu</span>
-          </div>
-          <div className="trust-stat">
-            <strong>98%</strong>
-            <span>Tingkat Persetujuan</span>
-          </div>
-          <div className="trust-stat">
-            <strong>10+</strong>
-            <span>Tahun Pengalaman</span>
-          </div>
+          {TRUST_STATS.map((s) => (
+            <div className="trust-stat" key={s.label}>
+              <strong>{s.num}</strong>
+              <span>{s.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

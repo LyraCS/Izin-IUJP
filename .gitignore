@@ -20,3 +20,6 @@ yarn-error.log*
 # Local tooling
 .opencode
 .impeccable
+
+# Local preview server log
+preview.log

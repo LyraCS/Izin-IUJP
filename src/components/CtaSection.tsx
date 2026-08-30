@@ -1,4 +1,5 @@
 import React from "react"
+import { CONTACT } from "../content"
 
 const CtaSection: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const CtaSection: React.FC = () => {
         <h2>Siap Mengurus IUJP Perusahaan Anda?</h2>
         <p>Konsultasikan kebutuhan legalitas operasi tambang Anda. Gratis dan tanpa komitmen.</p>
         <div className="cta-actions">
-          <a href="https://wa.me/6281318415169" className="btn btn--primary">Konsultasi Gratis</a>
+          <a href={CONTACT.waLink} className="btn btn--primary">Konsultasi Gratis</a>
           <a href="#layanan" className="btn btn--ghost">Lihat Layanan</a>
         </div>
       </div>

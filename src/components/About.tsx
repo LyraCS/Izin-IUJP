@@ -1,4 +1,5 @@
 import React from "react"
+import { VALUE_POINTS } from "../content"
 
 const About: React.FC = () => {
   return (
@@ -22,27 +23,15 @@ const About: React.FC = () => {
               terlegitimasi.
             </p>
             <div className="value-points">
-              <div className="value-point">
-                <strong>01</strong>
-                <div>
-                  <div className="vp-label">Legalitas Operasional</div>
-                  <div className="vp-text">Basis hukum untuk menjalankan jasa pertambangan.</div>
+              {VALUE_POINTS.map((v, i) => (
+                <div className="value-point" key={v.label}>
+                  <strong>0{i + 1}</strong>
+                  <div>
+                    <div className="vp-label">{v.label}</div>
+                    <div className="vp-text">{v.text}</div>
+                  </div>
                 </div>
-              </div>
-              <div className="value-point">
-                <strong>02</strong>
-                <div>
-                  <div className="vp-label">Kepatuhan Regulasi ESDM</div>
-                  <div className="vp-text">Selaras dengan aturan Kementerian ESDM.</div>
-                </div>
-              </div>
-              <div className="value-point">
-                <strong>03</strong>
-                <div>
-                  <div className="vp-label">Kepercayaan Mitra &amp; Klien</div>
-                  <div className="vp-text">Akses pasar dan kerja sama yang lebih luas.</div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="visual visual--aerial" />

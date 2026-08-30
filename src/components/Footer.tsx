@@ -1,4 +1,5 @@
 import React from "react"
+import { CONTACT, NAV_LINKS } from "../content"
 
 const Footer: React.FC = () => {
   return (
@@ -12,10 +13,9 @@ const Footer: React.FC = () => {
           <div>
             <h4>Navigasi</h4>
             <ul>
-              <li><a href="#layanan">Layanan</a></li>
-              <li><a href="#proses">Proses</a></li>
-              <li><a href="#tentang">Tentang</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              {NAV_LINKS.map((l) => (
+                <li key={l.label}><a href={l.href}>{l.label}</a></li>
+              ))}
             </ul>
           </div>
           <div>
@@ -32,16 +32,16 @@ const Footer: React.FC = () => {
             <div className="f-contact">
               <div>
                 <strong>Telepon/WhatsApp:</strong><br />
-                <a href="https://wa.me/6281318415169">+62 813-1841-5169</a>
+                <a href={CONTACT.waLink}>{CONTACT.waDisplay}</a>
               </div>
               <div>
                 <strong>Email:</strong><br />
-                <a href="mailto:cs@legalind.co.id">cs@legalind.co.id</a>
+                <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
               </div>
               <div>
                 <strong>Alamat:</strong><br />
-                <a href="https://maps.app.goo.gl/p3336gNvcZgnHV5FA" target="_blank" rel="noopener noreferrer">
-                  Ruko 92 Avenix BSD CITY, Jl. Raya Cisauk No.7 Blk F, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345
+                <a href={CONTACT.mapsLink} target="_blank" rel="noopener noreferrer">
+                  {CONTACT.address}
                 </a>
               </div>
             </div>

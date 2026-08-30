@@ -78,7 +78,6 @@ section { position: relative; }
   background: currentColor;
   opacity: 0.6;
 }
-.eyebrow--center::before { display: none; }
 .eyebrow--center::after {
   content: "";
   width: 32px;
