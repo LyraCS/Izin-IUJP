@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`header${scrolled ? " scrolled" : ""}`}>
+      <header className={`header${scrolled ? " scrolled" : ""}${menuOpen ? " menu-open" : ""}`}>
         <div className="container header-inner">
           <a href="#" className="brand">
             Izin<em>IUJP</em>
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
       </header>
 
       <nav className={`mobile-menu${menuOpen ? " open" : ""}`} aria-label="Menu seluler">
-        <Icons.menu onClick={() => setMenuOpen(false)} />
+        <button className="nav-toggle" onClick={() => setMenuOpen(false)} aria-label="Tutup menu">×</button>
         {links.map((l, i) => (
           <a key={l.label} href={l.href} onClick={() => setMenuOpen(false)}>
             <span className="n">0{i + 1}</span>

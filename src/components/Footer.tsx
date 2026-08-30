@@ -30,15 +30,26 @@ const Footer: React.FC = () => {
           <div>
             <h4>Kontak</h4>
             <div className="f-contact">
-              <div><strong>Telepon:</strong><br />+62 812-3456-7890</div>
-              <div><strong>Email:</strong><br />halo@izin-iu.jp</div>
-              <div><strong>Alamat:</strong><br />Jakarta, Indonesia</div>
+              <div>
+                <strong>Telepon/WhatsApp:</strong><br />
+                <a href="https://wa.me/6281318415169">+62 813-1841-5169</a>
+              </div>
+              <div>
+                <strong>Email:</strong><br />
+                <a href="mailto:cs@legalind.co.id">cs@legalind.co.id</a>
+              </div>
+              <div>
+                <strong>Alamat:</strong><br />
+                <a href="https://maps.app.goo.gl/p3336gNvcZgnHV5FA" target="_blank" rel="noopener noreferrer">
+                  Ruko 92 Avenix BSD CITY, Jl. Raya Cisauk No.7 Blk F, Sampora, Kec. Cisauk, Kabupaten Tangerang, Banten 15345
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} IzinIUJP. Hak cipta dilindungi.</span>
-          <span>Semua konten placeholder menunggu materi klien.</span>
+          <span>Terdaftar di Kabupaten Tangerang, Banten.</span>
         </div>
       </div>
     </footer>
