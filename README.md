@@ -1,20 +1,18 @@
 # Izin IUJP
 
-Landing page untuk layanan konsultasi dan pengurusan **IUJP (Izin Usaha Jasa Pertambangan)** bagi perusahaan jasa penunjang operasi tambang di Indonesia.
+A landing page for **IUJP (Izin Usaha Jasa Pertambangan)** consulting and licensing services, built for mining support service companies in Indonesia.
 
-Dibangun dengan React + Vite, mengikuti arahan desain **Industrial Editorial** dari PRD (dark base dengan aksen burnt orange, font Barlow Condensed + Barlow) sehingga terasa kredibel, institutional, dan otoritatif di ranah pertambangan.
+Built with React + Vite following the **Industrial Editorial** design direction from the PRD (dark base with a burnt orange accent, Barlow Condensed + Barlow fonts) so it feels credible, institutional, and authoritative in the mining space.
 
-![Preview](https://images.unsplash.com/photo-1523848309072-c199db53f137?q=80&w=1470&auto=format&fit=crop)
+## Features
 
-## Fitur
-
-- Single-page scrolling dengan sticky navbar
-- Hero section dengan foto tambang full-bleed
+- Single-page scrolling with a sticky navbar
+- Hero section with a full-bleed mining photo
 - Trust/credibility strip
-- Section Tentang, Layanan, Proses, Keunggulan, Statistik, FAQ, dan CTA
-- Accordion FAQ interaktif
-- Mobile responsive dengan hamburger menu fullscreen
-- Desain token-based (CSS custom properties) agar mudah di-sesuaikan
+- About, Services, Process, Why Choose, Stats, FAQ, and CTA sections
+- Interactive FAQ accordion
+- Mobile responsive with a fullscreen hamburger menu
+- Token-based design (CSS custom properties) for easy theming
 
 ## Tech Stack
 
@@ -22,31 +20,31 @@ Dibangun dengan React + Vite, mengikuti arahan desain **Industrial Editorial** d
 - Vite
 - TypeScript
 
-## Cara Menjalankan
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build untuk produksi:
+Production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Struktur
+## Project Structure
 
-- `PRD-Izin-IUJP.md` : dokumen kebutuhan produk
-- `PRODUCT.md` : ringkasan produk dan keputusan desain
-- `src/components/` : satu komponen per section (Header, Hero, Services, dll)
-- `src/App.css` : design token dan seluruh styling
+- `PRD-Izin-IUJP.md` : product requirements document
+- `PRODUCT.md` : product summary and design decisions
+- `src/components/` : one component per section (Header, Hero, Services, etc.)
+- `src/App.css` : design tokens and all styling
 
-## Catatan Konten
+## Content Notes
 
-Seluruh copy final, data statistik, testimoni, dan foto asli tambang masih placeholder dan menunggu materi dari klien. Tandai placeholder ini dengan komentar `TODO: konten dari klien`.
+All final copy, statistics data, testimonials, and original mining photos are still placeholders awaiting client material. Mark these placeholders with a `TODO: konten dari klien` comment.
 
-## Lisensi
+## License
 
 ISC
